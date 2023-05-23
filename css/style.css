@@ -1,0 +1,157 @@
+/* =================
+    Google Font
+   ================= */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  width: calc(100vw - (100vw - 100%));
+  min-width: 320px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* =================
+    Typography 
+   ================= */
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* =================
+    Nav and logo section
+   ================= */
+
+.nav-bar {
+  min-height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5em;
+}
+
+.logo {
+  height: 26px;
+}
+
+nav {
+  list-style-type: none;
+  text-transform: uppercase;
+  /* font-weight: 700; */
+}
+
+.nav-link {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #090909;
+}
+
+.nav-link:last-child {
+  margin-left: 0.7em;
+}
+/* =================
+    Hero section
+   ================= */
+
+.hero-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1.5em 1fr 1.5em);
+  grid-template-rows: repeat(2, 3fr 1fr);
+}
+
+.hero-img,
+.blog-post-hero {
+  grid-row: 1 / -1;
+}
+
+.hero-img {
+  width: 100%;
+  min-width: 320px;
+  min-height: 450px;
+  object-fit: cover;
+  object-position: center top;
+
+  grid-column: 1 / -1;
+}
+
+.blog-post-hero {
+  grid-column: 2 / -2;
+  grid-row: 2 / -1;
+  color: #fff;
+
+  width: min(100%, 600px);
+}
+
+.blog-post-hero h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.3em;
+}
+
+.blog-post-hero p {
+  margin: 0;
+}
+
+/* =================
+    Main content
+  ================== */
+
+.blog-section {
+  width: 90%;
+  margin: 2em auto;
+}
+
+.blog-post {
+  margin-bottom: 2em;
+}
+
+.blog-img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  object-position: center center;
+}
+
+.blog-date {
+  text-transform: uppercase;
+  margin: 0.5em 0 0.7em 0;
+}
+
+.blog-title {
+  margin: 0 0 0.3em 0;
+}
+
+.blog-text {
+  margin: 0;
+}
+
+/* =================
+    Footer
+   ================= */
+footer {
+  text-align: center;
+  color: #ececec;
+  background-color: #202020;
+}
+
+.footer-title {
+  padding: 2.25em 0 0.2em 0;
+  margin: 0;
+}
+
+.footer-copyright {
+  padding: 0 0 2.25em 0;
+  margin: 0;
+}
