@@ -50,7 +50,7 @@ p {
 nav {
   list-style-type: none;
   text-transform: uppercase;
-  /* font-weight: 700; */
+  font-weight: 600;
 }
 
 .nav-link {
@@ -80,11 +80,13 @@ nav {
 .hero-img {
   width: 100%;
   min-width: 320px;
-  min-height: 450px;
+  min-height: 470px;
   object-fit: cover;
   object-position: center top;
 
   grid-column: 1 / -1;
+
+  margin-bottom: 1em;
 }
 
 .blog-post-hero {
@@ -97,11 +99,13 @@ nav {
 
 .blog-post-hero h1 {
   font-size: 1.8rem;
-  margin-bottom: 0.3em;
+  margin: 0.5em 0 0.3em 0;
 }
 
 .blog-post-hero p {
   margin: 0;
+  font-size: 1.1rem;
+  max-width: 470px;
 }
 
 /* =================
@@ -126,10 +130,11 @@ nav {
 
 .blog-date {
   text-transform: uppercase;
-  margin: 0.5em 0 0.7em 0;
+  margin: 0.5em 0 0.9em 0;
 }
 
 .blog-title {
+  font-size: 1.3rem;
   margin: 0 0 0.3em 0;
 }
 
@@ -154,4 +159,103 @@ footer {
 .footer-copyright {
   padding: 0 0 2.25em 0;
   margin: 0;
+}
+
+/* =================
+    Post Page and About Page
+   ================= */
+
+.posts-headline {
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: 900;
+  padding: 0;
+  margin: 0 0 0.3em 0;
+}
+
+/* =================
+    About Page 
+   ================= */
+
+.about-section {
+  width: 90%;
+  margin: 2em auto;
+  padding-bottom: 1em;
+}
+
+.about-img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 10em;
+  height: 10em;
+}
+
+.about-title {
+  width: 80%;
+}
+
+/* =================
+    Post Page 
+   ================= */
+
+.post-section {
+  width: 90%;
+  margin: 2em auto;
+  padding-bottom: 1.5em;
+}
+
+.post-hero-img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  object-position: center center;
+}
+
+.post-subheading {
+  margin-top: 1.3em;
+}
+
+/* =================
+    Media Queries
+   ================= */
+
+@media (min-width: 768px) {
+  /* nav bar */
+
+  .logo {
+    height: 40px;
+  }
+
+  .nav-link {
+    font-size: 1.2rem;
+  }
+
+  /* blog posts */
+  .blog-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 0.8em;
+  }
+
+  /* About */
+  .about-hero {
+    display: flex;
+    gap: 1em;
+  }
+
+  .about-title {
+    width: 100%;
+  }
+
+  .about-extra-info {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* post section */
+  .post-section div {
+    width: 85%;
+    margin: 0 auto;
+  }
 }
