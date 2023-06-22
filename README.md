@@ -24,7 +24,3 @@ Make all the pages responsive
 - Check final code and accessibility
 - Finalize README file
 - Publish live URL
-
-## Author
-
-- LinkedIn - [LinkedIn](https://www.linkedin.com/in/christina-ligare/)
